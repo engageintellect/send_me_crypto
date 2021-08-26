@@ -1,5 +1,2 @@
-console.log("hello, world!")
-
-prompt = ("what is name");
-
+console.log("send_me_crypto")
 
