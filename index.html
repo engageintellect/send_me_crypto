@@ -44,97 +44,104 @@
 <!-- PAGE CODE -->
 
 
-<div class="header">
-    <h1>FEED ME CRYPTO</h1>
+<div class="header" style="padding: 10px">
+    <h2>SEND ME CRYPTO</h2>
 </div>
 
 
 <body>
         <center>
+            <!-- START CHART -->
             <div class="chart">
             <!-- <br><br><img src="./photos/btc_chains.jpg" width=75% height=75%><br> -->
 
+            <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+            <script type="text/javascript">
+                new TradingView.widget({
+                    "height": 400,
+                    "width": 750,
+                    "autosize": false,
+                    "symbol": "BITSTAMP:BTCUSD",
+                    "interval": "4H",
+                    <!-- "timezone": "Etc/UTC", -->
+                    "timezone": "pst/UTC",
+                    "theme": "light",
+                    "style": "3",
+                    "locale": "en",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": true,
+                    "allow_symbol_change": true,
+                    "hideideas": false
+                    });
+            </script>
+            <!-- END CHART -->
+
+
+            <!-- START CHART -->
+            <!-- <div class="chart"> -->        
+            <!-- <div class="tradingview-widget-container"> -->
+            <!-- <div id="tradingview_26993"></div> -->
+            <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/AAPL/" rel="noopener" target="_blank"><span class="blue-text">Chart</span></a> by TradingView</div> -->
             <!-- <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script> -->
             <!-- <script type="text/javascript"> -->
-            <!--     new TradingView.widget({ -->
-            <!--         "autosize": false, -->
-            <!--         "symbol": "BITSTAMP:BTCUSD", -->
-            <!--         "interval": "D", -->
-            <!--         <!-1- "timezone": "Etc/UTC", -1-> -->
-            <!--         "timezone": "pst/UTC", -->
-            <!--         "theme": "light", -->
-            <!--         "style": "1", -->
-            <!--         "locale": "en", -->
-            <!--         "toolbar_bg": "#f1f3f6", -->
-            <!--         "enable_publishing": false, -->
-            <!--         "allow_symbol_change": true, -->
-            <!--         "hideideas": false -->
-            <!--         }); -->
-            <!-- </script> -->
+            <!--     new TradingView.MediumWidget( -->
+            <!--       { -->
+            <!--       "symbols": [ -->
+            <!--         [ -->
+            <!--           "BITCOIN", -->
+            <!--           "BITSTAMP:BTCUSD" -->
+            <!--         ], -->
+            <!--         [ -->
+            <!--           "ETHEREUM", -->
+            <!--           "BITSTAMP:ETHUSD" -->
+            <!--         ], -->
+            <!--         [ -->
+            <!--           "CARDANO", -->
+            <!--           "KUCOIN:ADAUSDT" -->
+            <!--         ], -->
+            <!--         [ -->
+            <!--           "RIPPLE", -->
+            <!--           "BITSTAMP:XRPUSD" -->
+            <!--         ], -->
+            <!--         [ -->
+            <!--           "DOGECOIN", -->
+            <!--           "COINBASE:DOGEUSD" -->
+            <!--         ], -->
+            <!--         [ -->
+            <!--           "SOLANA", -->
+            <!--           "BINANCE:SOLUSD" -->
+            <!--         ] -->
+                
+                
+            <!--       ], -->
+            <!--       "chartOnly": true, -->
+            <!--       "width": 750, -->
+            <!--       "height": 400, -->
+            <!--       "locale": "en", -->
+            <!--       "colorTheme": "light", -->
+            <!--       "gridLineColor": "rgba(240, 243, 250, 0)", -->
+            <!--       "trendLineColor": "#303030", -->
+            <!--       "fontColor": "#303030", -->
+            <!--       <!-1- "underLineColor": "rgba(41, 98, 255, 0.3)", -1-> -->
+            <!--       <!-1- "underLineBottomColor": "rgba(41, 98, 255, 0)", -1-> -->
+            <!--       "underLineColor": "#808080", -->
+            <!--       "underLineBottomColor": "#303030", -->
+            <!--       "isTransparent": true, -->
+            <!--       "autosize": false, -->
+            <!--       "showFloatingTooltip": false, -->
+            <!--       "scalePosition": "right", -->
+            <!--       "scaleMode": "Normal", -->
+            <!--       "container_id": "tradingview_26993" -->
+            <!--     } -->
+            <!--       ); -->
+            <!--       </script> -->
+            <!-- </div> -->
+            <!-- </div> -->
+            <!-- END CHART -->
 
-
-            <div class="chart">            <!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div id="tradingview_26993"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/AAPL/" rel="noopener" target="_blank"><span class="blue-text">Apple</span></a> by TradingView</div>
-  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
-  <script type="text/javascript">
-  new TradingView.MediumWidget(
-  {
-  "symbols": [
-    [
-      "BITCOIN",
-      "BITSTAMP:BTCUSD"
-    ],
-    [
-      "ETHEREUM",
-      "BITSTAMP:ETHUSD"
-    ],
-    [
-      "CARDANO",
-      "KUCOIN:ADAUSDT"
-    ],
-    [
-      "RIPPLE",
-      "BITSTAMP:XRPUSD"
-    ],
-    [
-      "DOGECOIN",
-      "COINBASE:DOGEUSD"
-    ],
-    [
-      "SOLANA",
-      "BINANCE:SOLUSD"
-    ]
-
-
-  ],
-  "chartOnly": false,
-  "width": 750,
-  "height": 600,
-  "locale": "en",
-  "colorTheme": "light",
-  "gridLineColor": "rgba(240, 243, 250, 0)",
-  "trendLineColor": "#303030",
-  "fontColor": "#303030",
-  <!-- "underLineColor": "rgba(41, 98, 255, 0.3)", -->
-  <!-- "underLineBottomColor": "rgba(41, 98, 255, 0)", -->
-  "underLineColor": "#808080",
-  "underLineBottomColor": "#303030",
-  "isTransparent": true,
-  "autosize": false,
-  "showFloatingTooltip": false,
-  "scalePosition": "right",
-  "scaleMode": "Normal",
-  "container_id": "tradingview_26993"
-}
-  );
-  </script>
-</div>
-            </div>
-<!-- TradingView Widget END -->
-
+            <div style="padding: 10px; font-size: 16px"> 
             <a href="https://github.com/jc9361">Link to my GitHub</a><br><br>
+            </div> 
             </div>
         </center>
         <div class="table2" style="background-color:#303030; color:#ffffff">
@@ -157,7 +164,10 @@
             </p>
         </div><br>
 
-        
+ <div class="header" style="padding: 1px">
+    <h3>MY ADDRESSES</h3>
+</div>
+       
 
         <font color="#303030" size="2">
             <div class="table" style="background-color:#a5a6a8">
